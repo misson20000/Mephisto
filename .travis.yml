@@ -23,6 +23,7 @@ install:
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then CXX=clang++-5.0; fi
   - |
     if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
+      CXX=clang++
       brew update
       brew install lz4
     fi

@@ -31,7 +31,7 @@ install:
       CC=clang++
       brew update
       brew install llvm lz4
-      export PATH="/usr/local/opy/llvm/bin:$PATH"
+      export PATH="/usr/local/opt/llvm/bin:$PATH"
     fi
 script: make CC=$CC
 after_success:

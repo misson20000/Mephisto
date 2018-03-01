@@ -23,10 +23,8 @@ install:
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then CXX=clang++-5.0; fi
   - |
     if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
-      CC=clang++
       brew update
-      brew install llvm lz4
-      export PATH="/usr/local/opt/llvm/bin:$PATH"
+      brew install lz4
     fi
 script: make CC=$CC
 after_success:

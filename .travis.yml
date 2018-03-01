@@ -27,7 +27,7 @@ install:
       brew update
       brew install lz4
     fi
-script: make CC=$CC
+script: make CXX=$CXX
 after_success:
   - mv ctu ctu_$TRAVIS_OS_NAME
 deploy:
